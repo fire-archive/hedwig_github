@@ -4,14 +4,14 @@ defmodule HedwigSlack.Mixfile do
   @version "0.1.0"
 
   def project do
-    [app: :hedwig_slack,
-     name: "Hedwig Slack",
+    [app: :hedwig_github,
+     name: "Hedwig Github",
      version: @version,
-     elixir: "~> 1.1",
+     elixir: "~> 1.3",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      package: package,
-     description: "A Slack adapter for Hedwig",
+     description: "A github adapter for Hedwig",
      deps: deps]
   end
 
@@ -20,9 +20,10 @@ defmodule HedwigSlack.Mixfile do
   end
 
   defp deps do
-    [{:connection, "~> 1.0"},
+    [{:tentacat, "~> 0.5.2"},
+     {:connection, "~> 1.0"},
      {:gun, "1.0.0-pre.1"},
-     {:hedwig, github: "hedwig-im/hedwig"},
+     {:hedwig, "~> 1.0.0-rc.4"},
      {:poison, "~> 2.0"}]
   end
 
