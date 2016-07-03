@@ -1,4 +1,4 @@
-defmodule HedwigSlack.Mixfile do
+defmodule HedwigGithub.Mixfile do
   use Mix.Project
 
   @version "0.1.0"
@@ -16,15 +16,15 @@ defmodule HedwigSlack.Mixfile do
   end
 
   def application do
-    [applications: [:logger, :connection, :gun, :hedwig, :poison]]
+    [applications: [:logger, :connection, :gun, :poison, :hedwig]]
   end
 
   defp deps do
     [{:tentacat, "~> 0.5.2"},
      {:connection, "~> 1.0"},
      {:gun, "1.0.0-pre.1"},
-     {:hedwig, "~> 1.0.0-rc.4"},
-     {:poison, "~> 2.0"}]
+     {:poison, "~> 2.0"},
+     {:hedwig, github: "hedwig-im/hedwig"}]
   end
 
   defp package do
@@ -32,7 +32,7 @@ defmodule HedwigSlack.Mixfile do
      maintainers: ["Sonny Scroggin"],
      licenses: ["MIT"],
      links: %{
-       "GitHub" => "https://github.com/hedwig-im/hedwig_slack"
+       "GitHub" => "https://github.com/fire/hedwig_github"
      }]
   end
 end

@@ -1,7 +1,7 @@
-defmodule Hedwig.Adapters.Slack do
+defmodule Hedwig.Adapters.Github do
   use Hedwig.Adapter
 
-  alias Hedwig.Adapters.Slack.Connection
+  alias Hedwig.Adapters.Github.Connection
 
   defmodule State do
     defstruct conn: nil,

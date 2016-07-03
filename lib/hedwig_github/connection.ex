@@ -1,4 +1,4 @@
-defmodule Hedwig.Adapters.Slack.Connection do
+defmodule Hedwig.Adapters.Github.Connection do
   use Connection
 
   require Logger
