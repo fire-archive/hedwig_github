@@ -16,7 +16,7 @@ defmodule HedwigGithub.Mixfile do
   end
 
   def application do
-    [applications: [:logger, :connection, :gun, :poison, :hedwig]]
+    [applications: [:logger, :connection, :gun, :poison, :hedwig, :tentacat]]
   end
 
   defp deps do

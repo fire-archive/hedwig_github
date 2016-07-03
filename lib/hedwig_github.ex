@@ -1,8 +1,6 @@
 defmodule Hedwig.Adapters.Github do
   use Hedwig.Adapter
 
-  alias Hedwig.Adapters.Github.Connection
-
   defmodule State do
     defstruct conn: nil,
               channels: %{},
@@ -15,8 +13,9 @@ defmodule Hedwig.Adapters.Github do
   end
 
   def init({robot, opts}) do
-    {:ok, conn} = Connection.start_link(opts)
-    {:ok, %State{conn: conn, opts: opts, robot: robot}}
+    {:ok, conn} =
+      client = Tentacat.Client.new(%{access_token: "xxxxxxxxxxxxxxxxxxxxxx"})
+    {:ok, %State{conn: client, opts: opts, robot: robot}}
   end
 
   def handle_cast({:send, msg}, %{conn: conn} = state) do

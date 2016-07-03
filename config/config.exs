@@ -10,11 +10,11 @@ use Mix.Config
 
 # You can configure for your application as:
 #
-#     config :hedwig_slack, key: :value
+#     config :hedwig_github, key: :value
 #
 # And access this configuration in your application as:
 #
-#     Application.get_env(:hedwig_slack, :key)
+#     Application.get_env(:hedwig_github, :key)
 #
 # Or configure a 3rd-party app:
 #
