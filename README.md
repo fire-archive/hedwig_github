@@ -34,19 +34,19 @@ Change into our new application directory:
 λ cd alfred
 ```
 
-Add `hedwig_slack` to your list of dependencies in `mix.exs`:
+Add `hedwig_github` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
-  [{:hedwig_slack, "0.1"}]
+  [{:hedwig_github, "0.1"}]
 end
 ```
 
-Ensure `hedwig_slack` is started before your application:
+Ensure `hedwig_github` is started before your application:
 
 ```elixir
 def application do
-  [applications: [:hedwig_slack]]
+  [applications: [:hedwig_github]]
 end
 ```
 
@@ -163,5 +163,6 @@ details on writing responders and other exciting things!
 ## LICENSE
 
 Copyright (c) 2016, Sonny Scroggin.
+Copyright (c) 2016, K. S. Ernest Lee (iFire).
 
-Hedwig Slack source code is licensed under the [MIT License](https://github.com/hedwig-im/hedwig_slack/blob/master/LICENSE.md).
+Hedwig Github source code is licensed under the [MIT License](https://github.com/fire/hedwig_github/blob/master/LICENSE.md).
