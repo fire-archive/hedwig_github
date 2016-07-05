@@ -1,6 +1,6 @@
-# Hedwig Slack Adapter
+# Hedwig Github Adapter
 
-> A Slack Adapter for [Hedwig](https://github.com/hedwig-im/hedwig)
+> A Github Adapter for [Hedwig](https://github.com/hedwig-im/hedwig)
 
 ## Getting started
 
